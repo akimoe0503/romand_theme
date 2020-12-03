@@ -1,0 +1,285 @@
+p{
+    text-align: center;
+    font-size:26px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* <!--------------------- ここから news/event----------------------> */
+#in img{
+    width: 500px;
+    height :500px;
+}
+
+#in2{
+    height: 900px;
+    width: 1200px;
+}
+
+#in{
+    height: 550px;
+}
+
+
+/* <!--------------------- ここから タブメニュー----------------------> */
+
+/* タブメニュー */
+
+.margin-left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-color{
+    float:left;
+    margin-left:30px;
+    width: 150px;
+    height: 30px;
+    border-right:1px solid　#e7cdbc;
+    border-top:1px solid#e7cdbc;
+    background-color :#e7cdbc;
+}
+
+.in-color{
+    float:left;
+    margin-left:30px;
+    width: 150px;
+    height: 30px;
+    border-right:1px solid　#eacab4;
+    border-top:1px solid #eacab4;
+    background-color :#eacab4;
+}
+
+.out-color{
+    float:left;
+    margin-left:30px;
+    width: 150px;
+    height: 30px;
+    border-right:1px solid　#e4bc94;
+    border-top:1px solid #e4bc94;
+    background-color :#e4bc94;
+}
+
+.tab-nav{
+    margin:0 auto;
+}
+
+.tab-nav li:first-child {
+    border-left:3px solid #e7cdbc;
+}
+
+.tab-nav li a{
+    display:block;
+    padding:5px 10px;
+    color:#777;
+    text-decoration:none;
+}
+
+.tab-nav li a.active{
+    border-bottom:1px solid#dfbca0;
+    background-color :#dfbca0;
+    margin-bottom:-1px;
+}
+
+.tab-content{
+    width:900px;
+    border:2px solid#dfbca0;
+    margin:0 auto;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+.tab-content > div {
+    display: none;
+    padding:15px;
+    height: 500px;
+    line-height: 24px;
+}
+
+.tab-content img{
+    height: 300px;
+    width:300px;
+    margin-left: 300px;
+}
+
+.in-article{
+    width: 350px;
+    text-align: center;
+    margin-left:90px;
+    margin-top:10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.in-article strong{
+    color:rgb(202, 64, 87);
+}
+
+
+/* タブメニューここまで */
+
+
+/* <!--------------------- ここから best seller----------------------> */
+.swiper-slide img{
+    width: 200px;
+    height: 200px;
+}
+
+.swiper-container{
+    height: 500px;
+    width: 1000px;
+}
+/* <!--------------------- ここから footer----------------------> */
+footer{
+    width: auto;
+    height: 400px;
+    background-color: #1c2c2c;
+    margin-top:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:cornsilk;
+}
+
+.top{
+    display: flex;   
+    margin-right: 70px; 
+}
+
+.top li{
+    font-size: 25px;
+    margin:20px 75px;
+    border-bottom: cornsilk 1px solid;
+}
+
+.clearfix{
+    display:flex;
+}
+
+.fBox{
+    margin:0 60px;
+    margin-top:50px;
+}
+
+.fBox-in{
+    display: flex;
+}
+
+.fBox-in i{
+    margin-left:20px;
+    font-size:30px;
+}
+
+.last-wrrite{
+    margin-top:70px;    
+}
+
+/* スマフォ用 */
+@media screen and (max-width: 480px){
+
+    .main-color{
+        float:left;
+        margin-left:10px;
+        width: 80px;
+        height: 50px;
+        border-right:1px solid　#e7cdbc;
+        border-top:1px solid#e7cdbc;
+        background-color :#e7cdbc;
+    }
+    
+    .in-color{
+        float:left;
+        margin-left:10px;
+        width: 80px;
+        height: 50px;
+        border-right:1px solid　#eacab4;
+        border-top:1px solid #eacab4;
+        background-color :#eacab4;
+    }
+    
+    .out-color{
+        float:left;
+        margin-left:10px;
+        width: 80px;
+        height: 50px;
+        border-right:1px solid　#e4bc94;
+        border-top:1px solid #e4bc94;
+        background-color :#e4bc94;
+    }
+
+    .tab-content img{
+        height: 150px;
+        width:150px;
+        margin-left:10px;
+        margin-top:50px;
+    }
+    
+    .in-article{
+        width: 180px;
+        text-align: center;
+        margin-left:48px;
+        margin-top:10px;
+        font-size:12px;
+    }
+
+    .tab-content > div {
+        display: none;
+        padding:15px;
+        height: 500px;
+        line-height: 24px;
+    }
+
+    .tab-content{
+        width:300px;
+        border:2px solid#dfbca0;
+        margin:0 auto;
+
+    }
+
+    .top{
+        display: flex;   
+        margin-right: 20px; 
+    }
+    
+    .top li{
+        font-size: 16px;
+        margin:10px 35px;
+        border-bottom: cornsilk 2px solid;
+    }
+    
+    .clearfix{
+        display:flex;
+    }
+    
+    .fBox{
+        margin:0 30px;
+        margin-top:20px;
+    }
+    
+    .fBox-in{
+        display: flex;
+    }
+    
+    .fBox-in i{
+        margin-left:10px;
+        font-size:16px;
+    }
+    
+    .last-wrrite{
+        margin-top:30px; 
+        font-size:10px;
+    }
+
+ 
+
+}

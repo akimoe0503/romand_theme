@@ -1,0 +1,104 @@
+/* <!--------------------- ここからheader ----------------------> */
+header{
+    height: 120px;
+    background-color: #1c2c2c;
+}
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    color: cornsilk;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* <!--------------------- ここからheader line ----------------------> */
+.header_line{
+    height: 40px;
+    background-color: #d49976;
+}
+
+.btn-link{
+    margin-right: 30px;
+    color: #fff;
+
+}
+
+form{
+    width: 30px;
+    height: 30px;
+}
+
+/* <!--------------------- ここからtopphoto ----------------------> */
+.carousel-inner img{
+    width: 100%;
+    height: 300px;
+}
+
+
+/* <!--------------------- ここからnew allival ----------------------> */
+.swiper-container{
+    height: 300px;
+}
+
+#carousel-newallive{
+    display: none;
+}
+
+#carousel-news{
+    display: none;
+}
+
+#carousel-bestseller{
+    display: none;
+}
+
+/* スマフォ用 */
+@media screen and (max-width: 480px){
+    body {
+        min-width: 375px;
+      }
+
+    /* ヘッダー */
+    .carousel-inner img {
+        height: 150px;
+    }
+
+    /* スライダーを訂正 */
+    .swiper-container {
+        display: none;
+    }
+
+    #carousel-newallive{
+        display: block;
+    }
+
+    #carousel-newallive img{
+        width: 400px;
+        height: 400px;
+    }
+
+    #carousel-news{
+        display: block;
+    }
+
+    #carousel-news img{
+        width: 400px;
+        height: 400px;
+    }
+
+    #carousel-bestseller{
+        display: block;
+    }
+    
+    #carousel-bestseller img{
+        width: 400px;
+        height: 400px;
+    }
+
+    /* 文字サイズ */
+    p {
+        font-size: 18px;
+    }
+
+}
