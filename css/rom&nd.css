@@ -108,7 +108,7 @@ p{
 
 .tab-content img{
     height: 300px;
-    width:300px;
+    width: 300px;
     margin-left: 300px;
 }
 
@@ -120,8 +120,8 @@ p{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.in-article strong{
-    color:rgb(202, 64, 87);
+.in-article a{
+    color:#37291c;
 }
 
 
@@ -183,6 +183,7 @@ footer{
 .last-wrrite{
     margin-top:70px;    
 }
+
 
 /* スマフォ用 */
 @media screen and (max-width: 480px){
