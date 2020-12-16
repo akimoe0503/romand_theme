@@ -22,7 +22,7 @@
 					 <ul>
 					  	<li>ご利用ガイド</li>
 						  <li>お問い合わせ</li>
-					  	<li>Contact</li>
+					  	<li><a href="http://localhost/wordpress/index.php/contact/">Contact</a></li>
            </ul>
         </div>
         <div class="fBox">
