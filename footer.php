@@ -15,14 +15,16 @@
 						<li>LIP MAKES</li>
             <li>EYE MAKES</li>
             <li>CHEEK & CONTOUR</li>
-            <li>NEWS $ EVENT</li>
+            <li>NEWS & EVENT</li>
 					</ul>
 				</div>
 				<div class="fBox">
 					 <ul>
 					  	<li>ご利用ガイド</li>
 						  <li>お問い合わせ</li>
+
 					  	<li><a href="http://localhost/wordpress/index.php/contact/">Contact</a></li>
+					  	<li><a href="http://localhost/wordpress/index.php/contact/">Contact</a><li> 
            </ul>
         </div>
         <div class="fBox">

@@ -139,27 +139,74 @@
     <li class="out-color"><a href="#tab03">NEW Lips</a></li>
   </ul>
   
+      <ul class="tab-nav">
+        <li class="main-color"><a href="#tab01" class="active">NEW color</a></li>
+        <li class="in-color"><a href="#tab02">NEW Items</a></li>
+        <li class="out-color"><a href="#tab03">NEW Lips</a></li>
+      </ul>
+
+<!--------------------- ここから 記事です---------------------->
+
+>>>>>>> a5d5e1fd33f48127ffbe99a936a37a7e75af422c
    <div class="tab-content">
       <div id="tab01" class="active">
-        <div class="in-article">唇をよりキレイに見せる魅力的な<strong>MLBB</strong>カラーで
-          潤いのある滑らかなテクスチャのティントはまるで濃密なシロップで包んだかの様、
-          時間が経つにつれさらに<strong>凸凹</strong>になめらかに密着し落ちにくい、きらめくグロスリップに仕上げます。また、べたつかず潤いが残る<br>しっとりとしたテクスチャーです。
-          </div>
+<?php query_posts("cat=2&showposts=1"); ?>
+<?php if(have_posts()): ?>
+<?php while (have_posts()): the_post();?>
+                  <div class="in-article">
+                     <?php echo get_the_excerpt(); //本文を抜粋して出してくれる ?><a href="<?php the_permalink(); //詳細へのリンク　?>">続きを読む</a>
+                  </div>
+  　　
+  <?php endwhile;?>
+  <?php else: ?>
+    　
+  <h2 class="subtitle">投稿はありません</h2>
+
+  <?php endif;?>
+
          <img src="<?php echo get_template_directory_uri(); ?>/img/Lips.jpg" alt="">
       </div>
+
+      <!-- ーーーーーーーーーーーーーーーーーーーー -->
+
       <div id="tab02">
-        <div class="in-article">肌に馴染みやすく使いやすい配色で、滑らかで使い心地のいいアイシャドウ。マットカラーとグリッターで上品にもクールにも。美容系<strong>Youtuber</strong>アカウントから生まれた立ち上げからわずか<strong>2</strong>年で、<strong>2018</strong>年韓国のブランドアワードで賞を取ったブランド<br>「ロムアンド」の人気商品です。
-        </div>
+<?php query_posts("cat=3&showposts=1"); ?>
+<?php if(have_posts()): ?>
+<?php while (have_posts()): the_post();?>
+        <div class="in-article">
+                     <?php echo get_the_excerpt(); //本文を抜粋して出してくれる ?><a href="<?php the_permalink(); //詳細へのリンク　?>">続きを読む</a>
+                  </div>
+  　　
+  <?php endwhile;?>
+  <?php else: ?>
+    　
+  <h2 class="subtitle">投稿はありません</h2>
+
+  <?php endif;?>
            <img src="<?php echo get_template_directory_uri(); ?>/img/new.jpg" alt="">
       </div>
-      <div id="tab03">
-        <div class="in-article">唇に水の膜を張ったような透明な光沢と<strong>カラー</strong>の密着度の高い新感覚のティント。
-          カラーとツヤコーティング層の二層で、しっかりと色付けした後にツヤでコーティングし光沢感溢れる唇に仕上がります。
-          塗った瞬間から色が吸収されるようにしっかり馴染み<br>　<strong>3秒</strong>待つとツヤ感が浮き出ます。</div>
-           <img src="<?php echo get_template_directory_uri(); ?>/img/lips2.jpg" alt="">
+
+        <!-- ーーーーーーーーーーーーーーーーーーーー -->
+
+
+
+        <div id="tab03">
+<?php query_posts("cat=4&showposts=1"); ?>
+<?php if(have_posts()): ?>
+<?php while (have_posts()): the_post();?>
+        <div class="in-article">
+                     <?php echo get_the_excerpt(); //本文を抜粋して出してくれる ?><a href="<?php the_permalink(); //詳細へのリンク　?>">続きを読む</a>
+        </div>
+  　　
+  <?php endwhile;?>s
+  <?php else: ?>
+    　
+  <h2 class="subtitle">投稿はありません</h2>
+
+  <?php endif;?>
+           <img src="<?php echo get_template_directory_uri(); ?>/img/Lips2.jpg" alt="">
       </div>
   </div>
-</div>
 
 
      <!--------------------- ここから best seller---------------------->
